@@ -1,0 +1,9 @@
+type token = STAR | RPAR | LPAR | EOF | EMPTY | CHOICE | CHAR of char
+val menhir_begin_marker : int
+val xv_repetition : Ast.re
+val xv_regex : Ast.re
+val xv_main : Ast.re
+val xv_disjunction : Ast.re
+val xv_concat : Ast.re
+val xv_atom : Ast.re
+val menhir_end_marker : int

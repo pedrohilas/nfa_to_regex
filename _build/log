@@ -1,0 +1,21 @@
+# dune exec ./nfa2re.exe
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/hilas/.cache/dune/db
+# Workspace root: /home/hilas/TC/pratica2/nfa2re
+# Auto-detected concurrency: 16
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_5d4457_output
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I .nfa2re.eobjs/byte -no-alias-deps -opaque -o .nfa2re.eobjs/byte/dune__exe.cmo -c -impl .nfa2re.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I .nfa2re.eobjs/byte -I /home/hilas/.opam/default/lib/ppx_yojson_conv_lib -I /home/hilas/.opam/default/lib/seq -I /home/hilas/.opam/default/lib/yojson -no-alias-deps -opaque -open Dune__exe -o .nfa2re.eobjs/byte/dune__exe__Nfa2re.cmi -c -intf nfa2re.pp.mli)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I .nfa2re.eobjs/byte -I .nfa2re.eobjs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o .nfa2re.eobjs/native/dune__exe.cmx -c -impl .nfa2re.eobjs/dune__exe.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .nfa2re.eobjs/byte -I .nfa2re.eobjs/native -I /home/hilas/.opam/default/lib/ppx_yojson_conv_lib -I /home/hilas/.opam/default/lib/seq -I /home/hilas/.opam/default/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .nfa2re.eobjs/native/dune__exe__Nfa2re.cmx -c -impl nfa2re.pp.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o nfa2re.exe /usr/lib/ocaml/unix.cmxa -I /usr/lib/ocaml /home/hilas/.opam/default/lib/yojson/yojson.cmxa /home/hilas/.opam/default/lib/ppx_yojson_conv_lib/ppx_yojson_conv_lib.cmxa .nfa2re.eobjs/native/dune__exe.cmx .nfa2re.eobjs/native/dune__exe__Nfa2re.cmx)

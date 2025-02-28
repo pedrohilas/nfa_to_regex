@@ -1,0 +1,11 @@
+(executable
+ (name nfa2re)
+ (libraries unix)
+ (modules_without_implementation ast)
+ (preprocess (pps ppx_yojson_conv))
+)
+
+(ocamllex lexer)
+
+(menhir
+  (modules parser))
