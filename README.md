@@ -12,4 +12,4 @@ This OCaml project converts **Nondeterministic Finite Automata (NFA)** into **Re
 ## 🚀 Installation & Usage
 To run the program, use:
 ```bash
-cat test/test01.in | dune exec -- ./nfa2regex.exe
+cat test/test01.in | dune exec -- ./nfa2re.exe
